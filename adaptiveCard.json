@@ -1,0 +1,78 @@
+﻿{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "File an incident",
+          "weight": "bolder",
+          "size": "small"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Enter Date and time"
+        },
+        {
+          "type": "Input.Date",
+          "id": "dateinput"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Enter Your Name"
+        },
+        {
+          "type": "Input.Text",
+          "id": "nameinput",
+          "placeholder": "Enter Your Name",
+          "maxLength": 100
+        },
+        {
+          "type": "TextBlock",
+          "text": "Enter the issue",
+          "isMultiline": true
+        },
+        {
+          "type": "Input.Text",
+          "id": "issueinput",
+          "placeholder": "Enter the issue/incident"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Select urgency type"
+        },
+        {
+          "type": "Input.ChoiceSet",
+          "id": "urgencyinput",
+          "style": "compact",
+          "isMultiSelect": false,
+          "value": "1",
+          "choices": [
+            {
+              "title": "Normal",
+              "value": "1"
+            },
+            {
+              "title": "Urgent",
+              "value": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ]
+}

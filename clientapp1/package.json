@@ -1,0 +1,25 @@
+{
+  "name": "clientapp1-single",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib-commonjs/index.js",
+  "module": "lib/index.js",
+  "scripts": {
+    "build": "just-scripts build",
+    "just": "just-scripts",
+    "start": "just-scripts start",
+    "test": "just-scripts test",
+    "change": "npx beachball change",
+    "gen": "npx plop"
+  },
+  "dependencies": {
+    "office-ui-fabric-react": "^7.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-iframe": "^1.8.0"
+  },
+  "devDependencies": {
+    "just-stack-react": "^1.0.0",
+    "just-scripts": "^0.27.0"
+  }
+}
